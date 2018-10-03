@@ -3,7 +3,6 @@ body {
     font-size: 18px;
     color: #777;
   }
-
 /* Top Header */
 #masthead{
     position: fixed;
@@ -17,18 +16,31 @@ body {
 }
 .headcontainer{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
 }
 .headcontainer-item{
     padding:20px;
     display: inline-block;
 }
-.headcontainer-item li{
+.headcontainer-item{
     display: inline-block;
 }
-.headcontainer-item .logo{
+li {
+    display: inline-block;
+}
+.table{
+    display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+.logo{
+    margin: 18px;
     align-content: left;
     font-weight: bold;
+}
+.auth{
+    margin: 18px;
+    text-align-last: right;
 }
 .tiny {
     position: relative;
@@ -47,13 +59,29 @@ nav a:hover{
     color: rgb(60, 60, 60);
 }
 main{
-    margin-top: 30px;
+    margin-top: 100px;
     position: absolute;
     display: grid;
-    clear: both;
+    width:100%;
+}
+#title{
+    position: center;
+    align-content: center;
+    text-align: center;
 }
 .bottom{
     display:grid;
+}
+
+footer{
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    overflow: auto;
+    width: 100%;
+    background-color: azure;
+    border:0px;
+    text-align:justify;
 }
 .footeritem{
     display:inline;

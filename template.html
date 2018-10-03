@@ -11,21 +11,23 @@
     <!--  Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <header id="masthead">
         <div class="headcontainer">
-            
             <div class="headcontainer-item logo">
                 <i class="tiny material-icons">menu</i><span> stile</span>
             </div>
             <div class="headcontainer-item">
                 <nav>
-                    <ul>
-                        <li><a href="collection.html">Collection</a></li>
-                        <li><a href="catalog.html">Catalog</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
+                    <div class="table">
+                        <ul>
+                            <li><a href="collection.html">Collection</a></li>
+                            <li><a href="catalog.html">Catalog</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="headcontainer-item auth">
@@ -40,7 +42,24 @@
             <!-- fake breadcrumbs -->
             <a href="index.html">Home/</a><a href="collection.html">Collection/</a><a href="#">New Arrivals</a>
         </section>
-   
+        <section id="sortview">
+            <div id="sort">
+                <div class="dropdown">
+                    SORT BY <button onclick="myFunction()" class="dropbtn">default</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <div id="view">
+                <i class="tiny material-icons">menu</i>
+                <i class="tiny material-icons">menu</i>
+                <i class="tiny material-icons">menu</i>
+            </div>
+        </section>
+
     </main>
 
 
