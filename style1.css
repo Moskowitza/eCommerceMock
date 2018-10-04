@@ -3,6 +3,9 @@ body {
     font-size: 18px;
     color: #777;
   }
+  h1{
+      font-size:40px;
+  }
 /* Top Header */
 #masthead{
     position: fixed;
@@ -71,7 +74,7 @@ main{
     text-align: center;
 }
 #sortview{
-    margin:100px;
+    margin:0px 100px 0px 100px;
     display:grid;
     grid-gap: 18px;
     grid-template-columns:repeat(4, 1fr); 
@@ -80,23 +83,71 @@ main{
     text-align: center;
     border: solid lightgray 1px;
 }
-
-.bottom{
-    display:grid;
+#view{
+    text-align-last: right;
 }
+#join{
+    width:100%;
+    height:100px;
+    background: lightblue;
+    margin: 0px 100px 0px 100px;
+}
+
 #filtermenu li,
 #filtermenu a{
     text-decoration:none;
     color:white;
     display:block;
-    
+}
+#results{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    margin: 10px 100px;
+    grid-gap: 18px;
 }
 #filtermenu{
-    height:200px;
+    height:750px;
+    display:inline-grid;
+    overflow: auto;
+    text: grey;
+    padding:20px;
     background:  rgb(45, 45, 45);
-    box-shadow: 0px 5px 5px grey;
+    box-shadow: 0px 25px 15px grey;
+}
+#photos{
+    display:inline-grid;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.card{
+    display:inline-grid;
 }
 
+.space{
+    display:inline-block;
+}
+.moreBtn{
+    display:inline-block;
+    background-color: #999;
+    width:auto;
+    text-align: center;
+}
+.bottom{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:100%;
+    margin: 0px 100px 0px 100px;
+}
+.bottom li, .bottom a{
+    display:block;
+    align-content: left;
+    text-decoration: none;
+}
+.footeritem{
+    display:inline-blocks;
+   
+}
 footer{
     position: fixed;
     z-index: 99;
@@ -105,11 +156,15 @@ footer{
     width: 100%;
     background-color: azure;
     border:0px;
+    padding-left: 100px;
     text-align:justify;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
-.footeritem{
+.footer{
     display:inline;
 }
+
 
 @media only screen and (max-width: 980px) {
     /* smaller */
